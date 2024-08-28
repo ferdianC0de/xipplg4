@@ -22,6 +22,11 @@ Route::get('/home', function(){
     return view('home');
 });
 
+
+Route::get('/about', function(){
+    return view('home');
+});
+
 Route::prefix('admin')->group(function () {
     Route::get('/home', function(Request $request){
         return "Ini halaman Home untuk Admin "
